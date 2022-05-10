@@ -41,7 +41,7 @@
         </div>
 
         <!-- For Ex. 3. -->
-        <!-- <div id="counter" class="container">
+        <div id="counter" class="container">
            <table>
                <thead>
                    <tr>
@@ -55,7 +55,7 @@
                    </tr>
                </tbody>
             </table>
-        </div> -->
+        </div>
 
         <!-- Solution to Ex. 1. Become a True Brendan's Fan.  -->
         <!-- <script>
@@ -69,6 +69,7 @@
 
         <!-- Solution to Ex. 2. Bubbling Up.  -->
         <!-- <script>
+
             let firstContainer = document.querySelector('#main .container');
 
             firstContainer.onclick = event => {
@@ -107,9 +108,9 @@
         </script> -->
 
     <!-- Solution to Ex. 4. Sounds On.  -->
-    <!-- <script>
+    <script>
         let firstContainer = document.querySelector('#main .container');
-
+        
         const updateCounter = correct => {
             let id = (correct ? 'correct' : 'wrong') + '-counter';
             let counter = document.querySelector(`#${id}`);
@@ -123,7 +124,7 @@
             else file = 'jews_harp_boing-7111';
 
             try {
-                let audio = new Audio(`sounds/${file}.mp3`);
+                let audio = new Audio(`../sounds/${file}.mp3`);
                 audio.play();
             }
             catch(e) {
@@ -132,6 +133,7 @@
         };
 
         firstContainer.onclick = event => {
+
             // This is the element that was clicked.
             let target = event.target;
             // Check the dataset.
@@ -141,11 +143,11 @@
             // Play sound.
             playSound(res);
         };
-    </script>  -->
+    </script> 
 
 
         <!-- Solution to Ex. 5. Advanced. Pick Me!  -->
-        <!-- <script>
+        <script>
             let above = document.querySelector('#above img');
             above.onmouseenter = () => {
                 let el = document.querySelector('#below span');
@@ -161,7 +163,7 @@
                 setTimeout(() => el.style.display = 'none', 800);
             };
 
-        </script>  -->
+        </script> 
 
         <!-- 
 
